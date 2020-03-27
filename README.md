@@ -1,0 +1,1 @@
+# rnpm-plugin-desktop-qt
