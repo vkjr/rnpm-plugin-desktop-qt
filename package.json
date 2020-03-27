@@ -1,0 +1,22 @@
+{
+  "name": "rnpm-plugin-desktop-qt",
+  "version": "0.1.0",
+  "description": "rnpm plugin that generates desktop template project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkjr/rnpm-plugin-desktop-qt.git"
+  },
+  "author": "Volodymyr Kozieiev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vkjr/rnpm-plugin-desktop-qt/issues"
+  },
+  "homepage": "https://github.com/vkjr/rnpm-plugin-desktop-qt#readme",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
