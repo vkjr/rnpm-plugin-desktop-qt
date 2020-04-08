@@ -6,11 +6,13 @@ const execSync = require('child_process').execSync;
 const path = require('path');
 
 
+const PACKAGE = "git+https://github.com/vkjr/react-native-desktop.git#clean_repo";
+
 const REACT_NATIVE_DESKTOP_GENERATE_PATH = function() {
   return path.resolve(
     process.cwd(),
     'node_modules',
-    'react-native-desktop-qt',
+    'react-native-desktop',
     'local-cli',
     'generate-desktop.js'
   );
@@ -18,7 +20,7 @@ const REACT_NATIVE_DESKTOP_GENERATE_PATH = function() {
 
 
 function installDesktopPackage(options) {
-  let rndPackage = "git+https://github.com/vkjr/react-native-desktop-qt.git";
+  let rndPackage = PACKAGE;
 
   console.log(`Installing ${rndPackage}...`);
   const pkgmgr = Common.isGlobalCliUsingYarn(process.cwd()) ? 'yarn add' : 'npm install --save';
