@@ -6,13 +6,13 @@ const execSync = require('child_process').execSync;
 const path = require('path');
 
 
-const PACKAGE = "git+https://github.com/vkjr/react-native-desktop.git#clean_repo";
+const PACKAGE = "git+https://github.com/status-im/react-native-desktop-qt.git";
 
 const REACT_NATIVE_DESKTOP_GENERATE_PATH = function() {
   return path.resolve(
     process.cwd(),
     'node_modules',
-    'react-native-desktop',
+    'react-native-desktop-qt',
     'local-cli',
     'generate-desktop.js'
   );
